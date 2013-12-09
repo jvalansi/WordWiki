@@ -1,0 +1,4 @@
+<h1>{{ page.word }}</h1>
+    {% for word in page.words %}
+        <a href="{% url 'pages:text' word %}">{{ word }}</a>
+    {% endfor %}
